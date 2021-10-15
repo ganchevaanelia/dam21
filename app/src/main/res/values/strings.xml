@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sem2</string>
+    <string name="btn_login">Login</string>
+    <string name="tb_nume">Nume</string>
 </resources>
