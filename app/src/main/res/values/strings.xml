@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Carrot</string>
+    <string name="login">Login</string>
+    <string name="register">Register now</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="no_acc">"Don't have an account?"</string>
+    <string name="ok">OK</string>
+</resources>
