@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private Button btnRegister;
     private final int MAIN_ACTIVITY_REQUEST = 100;
     private EditText etUsername;
     private EditText etPassword;
+    private Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,17 @@ public class MainActivity extends AppCompatActivity {
     btnRegister.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent register = new Intent(MainActivity.this,RegisterActivity.class);
+            Intent register = new Intent(LoginActivity.this,RegisterActivity.class);
             startActivityForResult(register,MAIN_ACTIVITY_REQUEST);
+        }
+    });
+
+    btnLogin = findViewById(R.id.btn_login);
+    btnLogin.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent weather = new Intent(LoginActivity.this, WeatherActivity.class);
+            startActivity(weather);
         }
     });
     }

@@ -7,4 +7,8 @@
     <string name="e_mail">E-mail</string>
     <string name="no_acc">"Don't have an account?"</string>
     <string name="ok">OK</string>
+    <string name="bucharest">Bucharest</string>
+    <string name="min">"min "</string>
+    <string name="max">"max "</string>
+    <string name="degree"> °C</string>
 </resources>
