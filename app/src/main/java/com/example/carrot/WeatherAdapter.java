@@ -23,7 +23,7 @@ public class WeatherAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
+    public Weather getItem(int position) {
         return lista.get(position);
     }
 
@@ -41,12 +41,12 @@ public class WeatherAdapter extends BaseAdapter {
         TextView max = itemView.findViewById(R.id.item_max);
         Weather current = lista.get(position);
         day.setText(current.getDay());
-        min.setText(String.valueOf(current.getMin()));
-        max.setText(current.getMax());
+        min.setText(current.getMin()+"");
+        max.setText(current.getMax()+"");
 
         ImageView imageView=itemView.findViewById(R.id.imageViewWeather);
 
-        if(day.getText().toString().equals("TUE "))
+        if(day.getText().toString().equals("TUE"))
         {
             imageView.setBackgroundResource(R.drawable.rainy);
         }

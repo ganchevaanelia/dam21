@@ -2,10 +2,10 @@ package com.example.carrot;
 
 public class Weather {
     private String day;
-    private String min;
-    private String max;
+    private int min;
+    private int max;
 
-    public Weather(String day, String min, String max) {
+    public Weather(String day, int min, int max) {
         this.day = day;
         this.min = min;
         this.max = max;
@@ -19,19 +19,19 @@ public class Weather {
         this.day = day;
     }
 
-    public String getMin() {
+    public int getMin() {
         return min;
     }
 
-    public void setMin(String min) {
+    public void setMin(int min) {
         this.min = min;
     }
 
-    public String getMax() {
+    public int getMax() {
         return max;
     }
 
-    public void setMax(String max) {
+    public void setMax(int max) {
         this.max = max;
     }
 
