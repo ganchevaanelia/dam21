@@ -17,6 +17,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etPassword;
     private Button btnLogin;
 
+    private UserDao userDao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,11 @@ public class LoginActivity extends AppCompatActivity {
                     User user = (User) newBundle.getSerializable("putUser");
                     etUsername.setText(user.getUsername());
                     etPassword.setText(user.getPassword());
+
+                            userDao = Database.getInstance(LoginActivity.this).getDatabase().userDao();
+                            userDao.insert(user);
+
+
                 }
             }
         }

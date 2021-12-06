@@ -1,8 +1,16 @@
 package com.example.carrot;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity (tableName = "users")
 public class User implements Serializable {
+
+    @PrimaryKey(autoGenerate = true)
+    private int idUser;
+
     private String Email;
     private String Username;
     private String Password;
@@ -38,6 +46,14 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         Password = password;
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
     @Override

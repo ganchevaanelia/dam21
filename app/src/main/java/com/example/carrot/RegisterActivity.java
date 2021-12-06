@@ -9,12 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class RegisterActivity extends AppCompatActivity {
 
     private Button btnOk;
     private EditText etEmail;
     private EditText etUsername;
     private EditText etPassword;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,10 @@ public class RegisterActivity extends AppCompatActivity {
                     user.setUsername(etUsername.getText().toString());
                     user.setEmail(etEmail.getText().toString());
                     user.setPassword(etPassword.getText().toString());
+
+
+
+
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("putUser",user);
                     Intent intent = new Intent();
