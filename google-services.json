@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "58718990556",
+    "firebase_url": "https://carrot-bbde3-default-rtdb.firebaseio.com",
+    "project_id": "carrot-bbde3",
+    "storage_bucket": "carrot-bbde3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58718990556:android:f7d3e3c4667042c1898419",
+        "android_client_info": {
+          "package_name": "com.example.carrot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58718990556-gfu92kpornoa02ttmo1u68o2jc4i5134.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARtnoAh2EV07-NbW-lIQj2IOt8kB6N7x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58718990556-gfu92kpornoa02ttmo1u68o2jc4i5134.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
